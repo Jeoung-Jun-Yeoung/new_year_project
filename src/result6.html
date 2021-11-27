@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도사의 2022년 신년운세</title>
+    <style>
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px - 70px;
+                background-size: 500px;
+            }
+
+            .god {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+
+        * {
+            font-family: 'Gothic A3', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .god {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            border-radius: 150px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 80px auto 50px auto;
+            text-decoration: none;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTulJt7CeOmykMnJyrN3M2zeXEUMfJDsjPpxw&usqp=CAU');
+
+        }
+
+        .title {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn_back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+            background-color: white;
+
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn_share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result6.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+
+    </script>
+    </head>
+    
+    <body>
+        <div class="god" href='result6.html'></div>
+        <h1 class="title">2022년 양띠의 운세는?</h1>
+        <p class="msg">
+            2021년은 만사형통이 될꺼같은 운이였으나 생각보다 성과가 나타나지 않았던 해입니다. </br>
+
+2022년 후반기 부터 큰 기운이 들어옵니다. </br>
+
+양띠는 생각이 많고 매사에 신중합니다.</br>
+
+다만 다른사람의 탓을 많이 하는 경우가 있고 잘못된 결정을 감정에 따라 행동하는 경우가 있어서 손해를 자주 봅니다.</br>
+
+이점을 유의해야 합니다. </br>
+
+그리고 작은 의견의 차이로 주변 사람들과 다툼이 생길수 있으니 주위사람의 의견을 잘 받아 들여야 합니다. </br>
+
+이를 해결하지 못하면 더 큰 싸움으로 번지고 운이 들어오는 길목을 막게 될수가 있습니다. </br>
+
+2022년 임인년은 양띠에게 좋은해입니다.</br>
+
+다만 완벽한 운은 없습니다. 좋은일이 있으면 나쁜일도 있는 굴곡있는것이 인생입니다.  </br>
+
+장기적인 안목으로 결정해야 하며 자신의 선택을 믿고 흔들림없이 밀고 나가면 좋은 결과를 가져올수 있습니다.</br>
+
+
+        </p>
+        <div class="btn">
+            <button onclick="back();" class="btn_back">뒤로가기</button>
+            <button onclick="share();" class="btn_share">공유하기</button>
+        </div>
+    </body>
+
+</html>

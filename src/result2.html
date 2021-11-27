@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도사의 2022년 신년운세</title>
+    <style>
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px - 70px;
+                background-size: 500px;
+            }
+
+            .god {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+
+        * {
+            font-family: 'Gothic A3', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .god {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            border-radius: 150px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 80px auto 50px auto;
+            text-decoration: none;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+         background-image: url('data:image/png;base64,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');
+
+        }
+
+        .title {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn_back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+            background-color: white;
+
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn_share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result2.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share(){
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="god" href='result2.html'></div>
+    <h1 class="title">2022년 토끼띠의 운세는?</h1>
+    <p class="msg">
+        토끼띠는 유머와 재치가 있으며 감수성이 많아서 감정에 기복이 있습니다. </br>
+    
+        작년에 힘든 한해를 보냈다면 2022년에는 그 결실을 꽃피울수 있습니다. </br>
+    
+        다만 자칫 게을러지게되면 지금까지 노력을 그르칠수 있으니 바쁘게 움직여야 합니다.</br>
+    
+        또 신중해야 합니다. </br>
+    
+        작은 문제에 대해 손해를 볼줄 알아야 큰 행운이 찾아 옵니다. </br>
+    
+        작년과 마찬가지로 제일 조심해야하는 것은 건강과 주색잡기 .</br>
+    
+        건강이 깨지면 좋은 운을 받지 못하고 주색잡기에 빠져도 좋은 운을 받지 못합니다.</br>
+    
+    </p>
+    <div class="btn">
+        <button onclick="back();" class="btn_back">뒤로가기</button>
+        <button onclick="share();" class="btn_share">공유하기</button>
+    </div>
+</body>
+
+</html>

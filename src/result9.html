@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도사의 2022년 신년운세</title>
+    <style>
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px - 70px;
+                background-size: 500px;
+            }
+
+            .god {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+
+        * {
+            font-family: 'Gothic A3', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .god {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            border-radius: 150px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 80px auto 50px auto;
+            text-decoration: none;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpby1NibnPbedMVjnlHfezv_rkH9mgFEuozQ&usqp=CAU');
+
+        }
+
+        .title {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn_back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+            background-color: white;
+
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn_share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result9.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="god" href='result9.html'></div>
+    <h1 class="title">2022년 개띠의 운세는?</h1>
+    <p class="msg">
+        올해 개띠의 운은 매우 좋습니다. 운이 좋았을떄 미리 대비를 해야합니다.</br>
+
+        좋은 운일때 대비하는 건 어렵지 않습니다.</br>
+        
+        다툼과 분쟁 , 고민이 소의해에서 정리가 되지만 또다른 선택이 임인년에 기다리고 있습니다. </br>
+        
+        선택을 요구하는 일에 결단력이 필요하며 거침없이 자신의 생각대로 밀고 나가야 합니다.</br>
+        
+        자신의 미래를 결정할수 있는 능력이 충만한 시기로 시험 , 승진 , 사업확장의 운이 좋습니다.</br>
+        
+    </p>
+    <div class="btn">
+        <button onclick="back();" class="btn_back">뒤로가기</button>
+        <button onclick="share();" class="btn_share">공유하기</button>
+    </div>
+</body>
+
+</html>

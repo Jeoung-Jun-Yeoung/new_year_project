@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도사의 2022년 신년운세</title>
+    <style>
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px - 70px;
+                background-size: 500px;
+            }
+
+            .god {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+
+        * {
+            font-family: 'Gothic A3', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .god {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            border-radius: 150px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 80px auto 50px auto;
+            text-decoration: none;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5x8_L6JG-M4V9oppidvXxawoQdQCYUclMlQ&usqp=CAU');
+
+        }
+
+        .title {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn_back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+            background-color: white;
+
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn_share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result4.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+
+    </script>
+    </head>
+    
+    <body>
+        <div class="god" href='result4.html'></div>
+        <h1 class="title">2022년 뱀띠의 운세는?</h1>
+        <p class="msg">
+            2021년 뱀띠운세는 지금까지 이어지던 고민이 해결되는 해라면 2022년 뱀띠는 새로운 고민이 생기는 해입니다.</br> 
+
+어떤 결과에 대해 만족하지못해 집착을 보이는 경우를 조심해야 합니다. </br> 
+
+이를 잘 활용해서 일을 처리하면 큰 보상이 따라 옵니다.</br> 
+
+또한 성공에 대한 열망이 크기 때문에 실패라 생가하는 일도 성공으로 바꾸는 지혜가 있습니다. </br> 
+
+2021년에 귀인을 맞이했다면 그 귀인과의 인연이 끝날수 있습니다. </br> 
+
+지금까지 하던일을 정진하고 노력해야 귀인과의 인연이 지속됩니다. </br> 
+
+2022년 임인년 뱀띠는 노력해야 하는 해입니다.</br> 
+
+
+        </p>
+        <div class="btn">
+            <button onclick="back();" class="btn_back">뒤로가기</button>
+            <button onclick="share();" class="btn_share">공유하기</button>
+        </div>
+    </body>
+
+</html>

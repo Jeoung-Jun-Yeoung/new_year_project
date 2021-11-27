@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도사의 2022년 신년운세</title>
+    <style>
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px - 70px;
+                background-size: 500px;
+            }
+
+            .god {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 48px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+
+        * {
+            font-family: 'Gothic A3', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px;
+            background-repeat: no-repeat;
+        }
+
+        .god {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            border-radius: 150px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 80px auto 50px auto;
+            text-decoration: none;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+             background-image: url('data:image/png;base64,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');
+
+        }
+
+        .title {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn_back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+            background-color: white;
+
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn_share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result5.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+
+    </script>
+    </head>
+    
+    <body>
+        <div class="god" href='result5.html'></div>
+        <h1 class="title">2022년 말띠의 운세는?</h1>
+        <p class="msg">
+            작년 말띠는 운이 좋았습니다. 하지만 순탄하지많은 않았습니다. </br>
+
+            조금은 당황스럽고 예기치 못한 일로 그동안의 고민이 해결되었지만 그동안에 벌여놓은 일로 정신이 없습니다. </br>
+            
+            많은 기운이 들어오고 나가며 조금의 손해를 보게되지만 대범하게 대처하면 손해가 운으로 바뀝니다. </br>
+            
+            올해는 귀인이 오기때문에 노력과 자제력으로 자신의 감정을 다스려야 합니다. 또 가까운 사람의 말에 기를 귀울여야 합니다.</br>
+            
+            여자관계가 복잡한 해가 될수 있으므로 여자 조심을 해야합니다. </br>
+            
+            또한 이로 발생한 싸움을 크게 만들지 말아야 합니다. </br>
+            
+
+        </p>
+        <div class="btn">
+            <button onclick="back();" class="btn_back">뒤로가기</button>
+            <button onclick="share();" class="btn_share">공유하기</button>
+        </div>
+    </body>
+
+</html>
